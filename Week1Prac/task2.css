@@ -1,0 +1,17 @@
+p{
+    color: red;
+}
+
+.title{
+    color: aqua;
+}
+
+#container{
+    font-size: large;
+    border: 2px solid green;
+}
+
+img{
+    height: 500px;
+    width: 1000px;
+}
