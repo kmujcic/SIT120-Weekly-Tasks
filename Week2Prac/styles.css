@@ -1,0 +1,75 @@
+.title{
+    color: aqua;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: rgb(255, 209, 153);
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: yellowgreen;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.logoutbox{
+    background-color: bisque;
+    width: 450px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
+}
