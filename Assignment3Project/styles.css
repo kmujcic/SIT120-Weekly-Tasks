@@ -1,0 +1,52 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(97, 93, 73);
+}
+
+li b{
+    display: block;
+    padding: 15px 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li:last-child{
+    border-right: none;
+    border-left: none;
+}
+
+body {
+    background-image: url(./images/backgroundtools.png);
+}
+
+h1{
+    font-family: 'Bowlby One SC'; 
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 3px;
+    padding: 50px 50px;
+    background-color: rgba(128, 128, 128, .7);
+}
