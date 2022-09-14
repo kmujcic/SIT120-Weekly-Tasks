@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    
+    <title>Handling User Inputs</title>
+</head>
+<body>
+    <div id="app">
+        <h1>This is task 1, including email and password fields:</h1>
+
+        <input v-model="email" type="text" class="email" placeholder="E-mail address">
+        <p>Email address is: {{ email }}</p>
+
+        <input v-model="password" type="password" placeholder="Password">
+        <p>Password is: {{ password }}</p>
+
+        <br>
+
+        <h1>This is task 2, similar will be incorporated in my project also</h1>
+
+        <h2>Do you like my website?</h2>
+        <input v-model="checkedOptions" type="checkbox" id="Yes" value="Yes">
+        <label for="Yes">Yes</label> <br>
+        <input v-model="checkedOptions" type="checkbox" id="No" value="No">
+        <label for="Yes">No</label>
+        <span><p>You have selected: {{ checkedOptions }}</p></span>
+
+    </div>
+
+    <br>
+
+    <div id="app2">
+
+        <h1>This is task 3</h1>
+        <h2>Who is your favourite Naruto character?</h2>
+
+        <select v-model="selected">
+            <option value="" disabled>Please select an option</option>
+            <option v-for="option in options" v-bind:value="option.value">
+                {{ option.text }}
+            </option>
+        </select> <br> <br>
+        <span>Your favourite character is:  {{ selected }}</span>
+
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
